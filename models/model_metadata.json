@@ -1,0 +1,87 @@
+{
+  "model_type": "Random Forest Classifier",
+  "n_estimators": 200,
+  "training_samples": 400,
+  "test_samples": 100,
+  "feature_count": 26,
+  "metrics": {
+    "accuracy": 0.83,
+    "precision": 0.8478,
+    "recall": 0.7959,
+    "f1_score": 0.8211,
+    "roc_auc": 0.91,
+    "cv_auc_mean": 0.9043,
+    "cv_auc_std": 0.0188
+  },
+  "confusion_matrix": [
+    [
+      44,
+      7
+    ],
+    [
+      10,
+      39
+    ]
+  ],
+  "feature_importance": {
+    "ContractType": 0.16176524926443425,
+    "SatisfactionScore": 0.12037912060022972,
+    "LatePayments": 0.06509860779006153,
+    "MonthlyCharges": 0.06063817004342122,
+    "NumSupportCalls": 0.05549160021610207,
+    "TotalCharges": 0.05504078861218527,
+    "ReferralsGiven": 0.05243559258519869,
+    "TenureMonths": 0.05034694606523702,
+    "PlanUpgrades": 0.04976127474049475,
+    "LastInteractionDays": 0.0478580528928021,
+    "DataUsageGB": 0.04690244393980992,
+    "AvgCallDurationMin": 0.04123084419295969,
+    "Age": 0.03920887172993577,
+    "NumProducts": 0.02512383563394112,
+    "DeviceCount": 0.019240208544219702,
+    "PlanDowngrades": 0.01645912444208423,
+    "InternetType": 0.015360149602928828,
+    "PaymentMethod": 0.014525802233150498,
+    "OnlineSecurity": 0.011381907022567368,
+    "TechSupport": 0.011366768702658315,
+    "Gender": 0.00784092126539303,
+    "StreamingMovies": 0.007686165849925225,
+    "PaperlessBilling": 0.006589407370173769,
+    "StreamingTV": 0.006518591535200279,
+    "HasInternet": 0.006454854345655309,
+    "PromotionOffered": 0.005294700779230298
+  },
+  "feature_descriptions": {
+    "Age": "Customer Age",
+    "TenureMonths": "Months with Company",
+    "MonthlyCharges": "Monthly Bill ($)",
+    "TotalCharges": "Total Billed ($)",
+    "NumProducts": "Products Subscribed",
+    "NumSupportCalls": "Support Calls Made",
+    "AvgCallDurationMin": "Avg Call Duration (min)",
+    "SatisfactionScore": "Satisfaction Score (1-5)",
+    "LastInteractionDays": "Days Since Last Contact",
+    "ReferralsGiven": "Referrals Given",
+    "LatePayments": "Late Payments",
+    "DeviceCount": "Devices Connected",
+    "DataUsageGB": "Monthly Data Usage (GB)",
+    "PlanUpgrades": "Plan Upgrades",
+    "PlanDowngrades": "Plan Downgrades",
+    "Gender": "Gender",
+    "ContractType": "Contract Type",
+    "HasInternet": "Has Internet Service",
+    "InternetType": "Internet Type",
+    "OnlineSecurity": "Online Security",
+    "TechSupport": "Tech Support",
+    "StreamingTV": "Streaming TV",
+    "StreamingMovies": "Streaming Movies",
+    "PaymentMethod": "Payment Method",
+    "PaperlessBilling": "Paperless Billing",
+    "PromotionOffered": "Promotion Offered"
+  },
+  "class_distribution": {
+    "churned": 243,
+    "retained": 257,
+    "churn_rate": 0.486
+  }
+}
