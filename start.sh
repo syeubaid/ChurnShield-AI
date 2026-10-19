@@ -3,13 +3,9 @@
 #  ChurnShield — Startup Script
 # ─────────────────────────────────────────────────────────────
 
+export PATH="$HOME/.local/bin:$PATH"
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PYTHON="python3"
-
-# Try to use local pip-installed python first
-if [ -f "$HOME/.local/bin/python3" ]; then
-  PYTHON="$HOME/.local/bin/python3"
-fi
 
 echo ""
 echo "╔══════════════════════════════════════════════╗"
